@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+time aws lambda invoke --function-name hi-clojure-lambdas --payload '"Tush"' target/outfile
+cat target/outfile
+echo
+
+
