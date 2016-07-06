@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+aws lambda update-function-code \
+  --function-name hi-clojure-lambdas \
+  --publish \
+  --zip-file fileb://./target/hi-clojure-lambdas.jar

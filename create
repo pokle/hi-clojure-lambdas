@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+aws lambda create-function \
+  --function-name hi-clojure-lambdas \
+  --handler hello::handler \
+  --runtime java8 \
+  --memory 512 \
+  --timeout 10 \
+  --role arn:aws:iam::158527237998:role/hi-claudia-au-executor \
+  --zip-file fileb://./target/hi-clojure-lambdas.jar
